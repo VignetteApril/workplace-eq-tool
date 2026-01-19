@@ -6,7 +6,7 @@ const userInput = ref('')
 const result = ref('')
 const isLoading = ref(false)
 const errorMsg = ref('')
-const remainingCount = ref(10)
+const remainingCount = ref(100)
 
 // --- 新增：天气和心情状态 ---
 const weather = ref(null)
@@ -22,8 +22,8 @@ const checkDailyLimit = () => {
     localStorage.setItem('usage_date', today);
     localStorage.setItem('usage_count', '0');
   }
-  remainingCount.value = Math.max(0, 10 - count);
-  return count < 10;
+  remainingCount.value = Math.max(0, 100 - count);
+  return count < 100;
 }
 
 // 核心：初始化加载
