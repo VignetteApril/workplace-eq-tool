@@ -2,7 +2,7 @@
 // 这是一个运行在 Vercel 服务器上的函数，用户看不到这里的代码
 export default async function handler(req, res) {
     // 1. 获取你的 Key (从 Vercel 环境变量中读取，最安全)
-    const API_KEY = process.env.SILICONFLOW_API_KEY;
+    const API_KEY = process.env.APP_SILICONFLOW_API_KEY;
 
     if (!API_KEY) {
         return res.status(500).json({ error: 'Server Key Not Configured' });

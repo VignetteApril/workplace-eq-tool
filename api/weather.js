@@ -1,6 +1,6 @@
 // api/weather.js
 export default async function handler(req, res) {
-    const apiKey = process.env.QWEATHER_API_KEY;
+    const apiKey = process.env.APP_QWEATHER_API_KEY;
 
     // 默认查询北京 (101010100)，实际项目中可以根据用户 IP 查
     // 想要查其他城市，需要先调用和风的城市搜索 API，这里为了作业简单直接写死
